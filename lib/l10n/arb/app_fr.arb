@@ -1,0 +1,7 @@
+{
+    "@@locale": "fr",
+    "counterAppBarTitle": "Chococam",
+    "@counterAppBarTitle": {
+        "description": "la description the chococam"
+    }
+}

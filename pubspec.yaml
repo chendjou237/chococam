@@ -15,7 +15,6 @@ dependencies:
     sdk: flutter
   intl: ^0.18.1
 
-  flutter_gen: any
   auto_route: ^8.0.3
   dartz: ^0.10.1
   equatable: ^2.0.5
@@ -30,7 +29,9 @@ dependencies:
   mask_text_input_formatter: ^2.9.0
   formz: ^0.7.0
 dev_dependencies:
-  bloc_test: ^9.1.6
+  auto_route_generator: ^8.0.0
+  bloc_test: ^9.1.7
+  build_runner: ^2.4.9
   flutter_test:
     sdk: flutter
   mocktail: ^1.0.3
