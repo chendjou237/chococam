@@ -1,0 +1,40 @@
+name: chococam
+description: A Very Good Project created by Very Good CLI.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: "^3.3.0"
+
+dependencies:
+  bloc: ^8.1.4
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.5
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.1
+
+  flutter_gen: any
+  auto_route: ^8.0.3
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  get_it: ^7.6.9
+  hydrated_bloc: ^9.1.5
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  logger: ^2.2.0
+  flutter_hicons: ^0.1.0
+  flutter_native_splash: ^2.4.0
+  google_fonts: ^6.2.1
+  mask_text_input_formatter: ^2.9.0
+dev_dependencies:
+  bloc_test: ^9.1.6
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.3
+  very_good_analysis: ^5.1.0
+
+flutter:
+  uses-material-design: true
+  generate: true
