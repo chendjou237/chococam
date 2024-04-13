@@ -8,12 +8,12 @@ class VendorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: 
-    AutoTabsScaffold(
+    return SafeArea(
+        child: AutoTabsScaffold(
       routes: const [
         VendorHomeRoute(),
         VendorActivityRoute(),
-        VendorProfileRoute()
+        VendorSalesRoute()
       ],
       bottomNavigationBuilder: (context, tabsRouter) {
         return BottomNavigationBar(
@@ -29,8 +29,8 @@ class VendorScreen extends StatelessWidget {
               label: 'Activity',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: 'Profile',
+              icon: Icon(Icons.sell),
+              label: 'ventes',
             ),
           ],
         );

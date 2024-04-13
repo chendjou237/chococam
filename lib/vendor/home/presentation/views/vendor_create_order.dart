@@ -74,9 +74,11 @@ class VendorCreateOrderScreen extends StatelessWidget {
 
 class ChocoInput extends StatelessWidget {
   final String placeholder;
+  final IconData? icon;
   const ChocoInput({
     super.key,
     this.placeholder = 'Enter the ...',
+    this.icon 
   });
 
   @override
@@ -91,7 +93,7 @@ class ChocoInput extends StatelessWidget {
         decoration: InputDecoration(
             labelText: placeholder,
             border: InputBorder.none,
-            icon: Icon(Icons.attach_money)),
+            icon: Icon(icon?? Icons.attach_money)),
       ),
     );
   }

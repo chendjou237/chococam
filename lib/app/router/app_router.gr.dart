@@ -33,10 +33,10 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const VendorHomeScreen(),
       );
     },
-    VendorProfileRoute.name: (routeData) {
+    VendorSalesRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const VendorProfileScreen(),
+        child: const VendorSalesScreen(),
       );
     },
     VendorRoute.name: (routeData) {
@@ -97,15 +97,15 @@ class VendorHomeRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [VendorProfileScreen]
-class VendorProfileRoute extends PageRouteInfo<void> {
-  const VendorProfileRoute({List<PageRouteInfo>? children})
+/// [VendorSalesScreen]
+class VendorSalesRoute extends PageRouteInfo<void> {
+  const VendorSalesRoute({List<PageRouteInfo>? children})
       : super(
-          VendorProfileRoute.name,
+          VendorSalesRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'VendorProfileRoute';
+  static const String name = 'VendorSalesRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }
