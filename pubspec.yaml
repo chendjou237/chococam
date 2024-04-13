@@ -37,6 +37,11 @@ dev_dependencies:
   mocktail: ^1.0.3
   very_good_analysis: ^5.1.0
 
+flutter_native_splash:
+  background_image: "assets/splash.png"
+
+ 
 flutter:
   uses-material-design: true
   generate: true
+

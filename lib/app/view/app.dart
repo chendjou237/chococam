@@ -25,19 +25,26 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     const theme = ChococamTheme();
 
-    return BlocBuilder<ThemeCubit, bool>(
-      builder: (context, state) {
-        return MaterialApp.router(
-          debugShowCheckedModeBanner: false,
-          theme: theme.toThemeData(Brightness.light),
-          themeMode: state == false ? ThemeMode.light : ThemeMode.dark,
-              routerConfig: router.config(),
-              supportedLocales: AppLocalizations.supportedLocales,
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => ThemeCubit(),
+        ),
+      ],
+      child: BlocBuilder<ThemeCubit, bool>(
+        builder: (context, state) {
+          return MaterialApp.router(
+            debugShowCheckedModeBanner: false,
+            theme: theme.toThemeData(Brightness.light),
+            themeMode: state == false ? ThemeMode.light : ThemeMode.dark,
+            routerConfig: router.config(),
+            supportedLocales: AppLocalizations.supportedLocales,
 
-          //   localizationsDelegates: AppLocalizations.localizationsDelegates,
-          // supportedLocales: AppLocalizations.supportedLocales,
-        );
-      },
+            //   localizationsDelegates: AppLocalizations.localizationsDelegates,
+            // supportedLocales: AppLocalizations.supportedLocales,
+          );
+        },
+      ),
     );
   }
 }
