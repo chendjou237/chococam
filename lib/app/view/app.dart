@@ -39,7 +39,7 @@ class _AppState extends State<App> {
             themeMode: state == false ? ThemeMode.light : ThemeMode.dark,
             routerConfig: router.config(),
             supportedLocales: AppLocalizations.supportedLocales,
-
+            
             //   localizationsDelegates: AppLocalizations.localizationsDelegates,
             // supportedLocales: AppLocalizations.supportedLocales,
           );

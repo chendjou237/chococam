@@ -24,6 +24,7 @@ extension WakaluxeBuildContextExtension on BuildContext {
   TextStyle get titleLg => typography.titleLarge!.copyWith(
         //fontWeight: FontWeight.w600,
         color: colorScheme.onBackground,
+        fontWeight: FontWeight.bold
       );
   TextStyle get titleLgBold => typography.titleLarge!.copyWith(
         fontWeight: FontWeight.w600,

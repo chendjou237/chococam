@@ -94,6 +94,7 @@ class ChococamTheme extends ThemeExtension<ChococamTheme> {
         indicatorColor: colorScheme.secondaryContainer,
       ),
       appBarTheme: AppBarTheme(
+        
         backgroundColor: isLight ? colorScheme.onPrimary : colorScheme.surface,
       ),
       chipTheme: ChipThemeData(
