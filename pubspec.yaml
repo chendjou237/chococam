@@ -28,6 +28,7 @@ dependencies:
   flutter_native_splash: ^2.4.0
   google_fonts: ^6.2.1
   mask_text_input_formatter: ^2.9.0
+  formz: ^0.7.0
 dev_dependencies:
   bloc_test: ^9.1.6
   flutter_test:
